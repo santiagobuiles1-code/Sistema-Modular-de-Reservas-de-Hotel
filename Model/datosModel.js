@@ -1,4 +1,4 @@
-let habitaciones = [
+export let habitaciones = [
     {
         id: "H-01",
         tipo_cama: "doble",
