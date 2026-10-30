@@ -1,5 +1,5 @@
-import { habitaciones } from "../Model/datosModel";
-import { hacerCheckIn, ingresosNocturnos } from "./operacionesController";
+import { habitaciones } from "../Model/datosModel.js";
+import { hacerCheckIn, ingresosNocturnos } from "./operacionesController.js";
 
 // consultar estado de habitaciones
 console.log("*** ESTADO INICIAL DE LAS HABITACIONES ***");
@@ -12,3 +12,7 @@ hacerCheckIn("H-01");
 // Check-in exitoso en una habitación libre
 console.log("+++ CHECK-IN EN HABITACIÓN DISPONIBLE +++");
 hacerCheckIn("H-03");
+
+// Estado actualizado de las habitaciones
+console.log("=== ESTADO ACTUALIZADO DE LAS HABITACIONES ===");
+console.table(habitaciones);
