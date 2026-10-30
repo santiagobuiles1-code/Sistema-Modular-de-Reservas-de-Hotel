@@ -18,3 +18,15 @@ export function hacerCheckIn(id) {
         return true;
     }
 }
+
+export function ingresosNocturnos () {
+    let total = 0
+
+    habitaciones.forEach(habitacion => {
+        if (habitacion.estado === "Ocupada") {
+            total += habitacion.precio_noche;
+        }
+    });
+
+    return total;
+}
