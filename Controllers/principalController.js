@@ -16,3 +16,7 @@ hacerCheckIn("H-03");
 // Estado actualizado de las habitaciones
 console.log("=== ESTADO ACTUALIZADO DE LAS HABITACIONES ===");
 console.table(habitaciones);
+
+// Ingreso total de la noche
+console.log("+++ INGRESO TOTAL DE LA NOCHE +++");
+console.log(`Total: $${ingresosNocturnos()}`);
